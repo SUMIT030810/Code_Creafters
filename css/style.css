@@ -1,0 +1,267 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Css Variable */
+:root{
+    --navbar-height:60px;
+}
+/* logo */
+#logo{
+    size: 100%;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar Logo And Image */
+#logo{
+     height: 50px;
+     margin: 10px 10px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 2px 4px;
+}
+
+/* Navigation Bar List Styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5 rem;
+}
+
+#navbar ul li a{
+    color: yellow;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color:rgb(29, 240, 29);
+    color: black;
+}
+
+/* HOME STYLE= */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('ENGLISH.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+    animation:slider 15s infinite linear;
+}
+/* Image Sliding */
+@keyframes slider{
+    0%{ background:url('ENGLISH.jpg') no-repeat center center/cover;}
+    35%{ background:url('chagol.jpg') no-repeat center center/cover; }
+    75%{ background:url('kukur.jpg') no-repeat center center/cover; }
+}
+
+#home h1{
+    color:  white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* utility */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+/* Work Section */
+#work{
+    display: flex;
+    margin: 34px;
+}
+
+#work .box h2{
+    font-family: 'Bookman', cursive;
+}
+
+#work .box{
+    border: 2px solid rgb(248, 5, 5);
+    padding: 30px;
+    margin: 3px 3px;
+    border-radius: 30px;
+    background-color: pink;
+}
+#work .box_col{
+    border: 2px solid rgb(42, 165, 54);
+    padding: 30px;
+    margin: 3px 3px;
+    border-radius: 30px;
+    background-color: greenyellow;
+}
+#work .box video{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    display: inline;
+}
+#work .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contact Section= */
+#contact{
+    position: relative;
+    height: 550px;
+    color: rgb(54, 54, 49);
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background:url("contact.png");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+contact-box form{
+    width: 40%;
+}
+contact-box label{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* feedback img*/
+#feedback::before{
+    content: "";
+    position: absolute;
+    background:url("goru.jpg");
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+/* about Box */
+#about{
+    display: flex;
+    margin: 22px;
+}
+#about .box h2{
+    font-family: 'Bookman', cursive;
+}
+
+#about .box{
+    border: 2px solid rgb(42, 165, 54);
+    padding: 30px;
+    margin: 3px 3px;
+    border-radius: 30px;
+    background-color: greenyellow;
+}
+#about .box_col{
+    border: 2px solid rgb(42, 165, 54);
+    padding: 30px;
+    margin: 3px 3px;
+    border-radius: 30px;
+    background-color: greenyellow;
+}
+#about .box img{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    display: inline;
+}
+#about .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}

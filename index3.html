@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body bgcolor="#fb59fe">
+
+    <nav id="navbar">
+        <div id="logo">
+          <img src="logo.jpg">  
+
+        </div>
+        <ul >
+            <li class="item"><a href="index1.html" style="font-family: 'Baloo Bhai', cursive;">ABOUT</a></li>
+            <li class="item"><a href="index2.html" style="font-family: 'Baloo Bhai', cursive;">SPELL CREAFTERS</a></li>
+            <li class="item"><a href="insex3.html" style="font-family: 'Baloo Bhai', cursive;">DICTIONARY CRAFTERS</a></li> 
+            <li class="item"><a href="index1.html" style="font-family: 'Baloo Bhai', cursive;">CONTACT</a></li>
+            <li class="item"><a href="index1.html" style="font-family: 'Baloo Bhai', cursive;">CONTRIBUTORS</a></li>
+        </ul>
+        <nav style="margin-left:auto">
+          <button onclick="gfg_Run1()">🔴</button>
+          <button onclick="gfg_Run2()">🟢</button>
+          <button onclick="gfg_Run3()">🟡</button>
+          <button onclick="gfg_Run4()">🔵</button>
+          <button onclick="gfg_Run6()">🟣</button>
+          <button onclick="gfg_Run5()">⚪</button>
+      </nav>
+      <script>	
+          function changeColor(color) {
+              document.body.style.background = color;
+          }
+          
+          function gfg_Run1() {
+              changeColor('#FF6306');
+          }
+          function gfg_Run2() {
+              changeColor('limegreen');
+          }
+          function gfg_Run3() {
+              changeColor('yellow');
+          }
+          function gfg_Run4() {
+              changeColor('#4CD9FF');
+          }
+          function gfg_Run5() {
+              changeColor('#FFFFFF');
+          }
+          function gfg_Run6() {
+              changeColor('#fb59fe');
+          }
+      </script>
+    </nav>
+
+    <div class ="box">
+
+    <!-- AISHIKA's Code Html -->
+    <div class="container">
+      <br/><h2>English Dictionary</h2>
+      <div class="search">
+        <input type="text" placeholder="Search a word" required spellcheck="false">
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
+      </div>
+      <p class="description">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p>__</p>
+            <span>_ _</span>
+          </div>
+          <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+          <li class="meaning">
+            <div class="details">
+              <p>Meaning</p>
+              <span>___</span>
+            </div>
+          </li>
+          <!-- <li class="example">
+            <div class="details">
+              <p>Example</p>
+              <span>___</span>
+            </div>
+          </li> -->
+          <!-- <li class="synonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list"></div>
+            </div>
+          </li> -->
+        </div>
+      </ul>
+    </div>
+    </div>
+
+    <script src="script3.js"></script>
+
+
+    <!-- My code-->
+    <footer>
+      <div class="footer-section">
+          <p style="font-family:'baloo bhai',cursive;text-align: center; margin: auto ;padding: auto; font-size: 2rem;background-color:black;color:white;font-size: 25px;">
+              <a href="mailto: codecrafters@gmail.com" style="font-family: 'Baloo Bhai', cursive;">codecrafters@gmail.com</a><br/>
+              Copy Right &copy;
+          </p>
+      </div>
+  </footer>
+
+  </body>
+</html>
